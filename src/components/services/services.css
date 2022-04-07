@@ -1,0 +1,184 @@
+
+
+.container__services{
+    margin-top: 5rem;
+}
+
+.container__service-body{
+    display: flex;
+    flex-direction: row;
+    background-color: #42AA90;
+    padding: 3rem;
+    border-radius: 2rem;
+
+}
+
+.service__developer {
+    background-color: #4A5DE3;
+}
+
+.service__yellow{
+    background-color: #F8B705;
+}
+
+.service__text-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services__main-image{
+    width: 30%
+}
+
+.services__area{
+    width: 90%;
+    color: #ffff;
+}
+
+.services__area h5{
+    background:#F9A63A ;
+    border-radius: 25px;
+    padding: 0.7rem 1.7rem 0.4rem 1.7rem;
+    max-width: 20%;
+    font-size: 0.9rem; 
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 1.9rem 0 -0.4rem;
+    text-align: center;
+}
+
+.services__title{
+    font-weight:600;
+}
+
+.service__type{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    margin: 1rem 0;
+    justify-content: space-between;
+}
+
+
+.features__box{
+    width: 49%;
+    border-radius: 16px;
+}
+
+
+
+.container__contact{
+    display: flex;
+   flex-direction: row;
+    background-color:#F4F4FF;
+    margin: 2rem 0 3rem 0;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 2rem;
+    justify-content: space-between;
+   
+}
+
+.contact__text{
+    width: 49%;
+}
+
+.contact__text h2{
+    padding-bottom: 1rem;
+}
+
+.form__contact{
+    width: 45%;
+    text-align: center;
+}
+
+.form__contact small{
+    padding-top: 1.3rem;
+}
+
+/* ====================MEDIA QUERIES (LARGE DEVICES) ===========================*/
+
+@media screen and (max-width:1024px){
+    
+  }
+  
+  
+  
+  /* ====================MEDIA QUERIES (SMALL DEVICES) ===========================*/
+  
+  @media screen and (max-width:600px){
+
+    .container__service-body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        padding: 01rem 0.5rem;
+       
+    
+    }
+    .services__main-image{
+          width: 80%;
+          margin: 0 auto;
+
+      }
+    
+    .service__text-form{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        
+    }
+
+    .feature__text{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .services__area{
+        display:flex;
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0;
+        justify-content: center;
+        margin: 0 auto;
+        
+    }  
+
+    .services__area h5{
+        max-width: 60%;
+        justify-content: center;
+    }
+
+    .service__type{
+        display: grid;
+        grid-template: 100px 100px 200px 200px/ 200px 300px 200px;
+    
+    }
+    
+    .service__developer, .service__yellow{
+        grid-row: span 3;
+        grid-column: span 3;
+        text-align: center;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+
+    .container__contact{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 8rem;
+        width: 100%;
+    }
+
+    .contact__text{
+        width: 350px;
+    }
+
+    .form__contact{
+        width: 300px;
+    }
+
+  }

@@ -1,0 +1,299 @@
+
+.container__main{
+    display: grid;
+    grid-template-columns: 55% 35%;
+    background-color: #F4F4FF;
+    border-radius: 1.25rem;
+    position: relative;
+   
+}
+
+/*========================Updated style for backgorund color===============================*/
+.container__box{
+    background-color:#FAFAFF;
+    padding-top: 4rem;
+}
+
+.container__main >h1, h2{
+    line-height: 1;
+    padding: 0;
+} 
+
+.container__text-main >h5{
+    background:#3F39F534;
+    border-radius: 25px;
+    padding: 0.5rem 1.9rem;
+    width: 17rem;
+    text-align: center;
+    font-size: 0.9rem; 
+    color: #1D1D99;
+    letter-spacing: 1px;
+    margin-bottom: 1.2rem;
+    
+}
+
+.container__text-main > p{
+    padding-top: 1.4rem;
+    text-align: left;
+    font-size: 1rem;
+    letter-spacing: 0px;
+    color: #060F3D;
+    font-weight: 100px;
+  
+}
+
+.container__text-main{
+    padding: 4rem 4rem; 
+}
+
+.container__main h1,h5{
+    opacity: 1;
+    letter-spacing: 0px;
+    color: #060F3D;
+    
+}
+
+
+.wailist__pic{
+    max-width: 19%;
+    padding-right: 0.7rem;
+}
+
+.wailist__tag{
+    display: flex;
+   align-items: center;
+}
+
+.text-color{
+    color: #3F39F5;
+}
+
+.container__title{
+    opacity: 1;
+    text-transform: capitalize;
+    color: #060F3D;
+}
+
+
+.main__image{
+    position: relative;
+    /* width: 28rem; */
+    width: 34rem;
+    aspect-ratio: 1/1;
+    justify-self: flex-end;
+    margin-left: auto;
+}
+.container__text-main > form{
+    display: grid;
+    position: relative;
+}
+/* input[type="email"]{
+    height: 1.9rem;
+    border: none;
+    border-radius: 8px;
+    text-indent: 15px;
+    display: block;
+    width: 90%; 
+    margin-top: 2rem;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+} */
+
+.form-container{
+    display: grid;
+    width:90%;
+    height:7vh;
+    background-color:white;
+    border: 4px solid white;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.01);
+    border-radius: 0.8rem;
+    margin: 2rem 0 1rem;
+    align-items: center;
+
+}
+
+.email-field{
+    height: 5vh;
+    background-color:black;
+    padding:0px 5px 0px 10px;
+    width: 75%;
+    caret-color:#fc4e03;
+    background-color:white;
+    font-size:1rem;
+    color:#383838;
+    outline-style:none;
+    border:none;
+    border-radius: 0.7rem;
+    text-align: center;
+
+}
+.submit-btn{
+    height:5vh;
+    width: 124px;
+    background-color: #3f39f5;
+    border:none;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    float:right;
+    color:white;
+    box-shadow: 0px 15px 30px #4143F129;
+    cursor: pointer;
+}
+
+.submit-btn:hover, .submit-btn:focus{
+    background-color: #4A5DE3;
+}
+
+.email-field.hover{
+    background-color:#f2f2f2;
+}
+
+
+/* ====================MEDIA QUERIES (MEDIUM DEVICES) ===========================*/
+
+@media screen and (max-width:1024px){
+
+  .container__main{
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      place-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: none;
+      
+  }
+
+  .container__text-main{
+      display: flex;
+      flex-direction: column;
+     max-width: 100%;
+     margin: 0 auto;
+     justify-content: center;
+     align-items: center;
+  }
+
+  .main__image{
+      order: 1;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      padding-top: 1rem;
+      margin: 0;
+  }
+
+  .container__heading{
+      line-height: 1.2;
+  }
+  .container__text-main{
+      order: 2;
+      text-align: center;
+      margin-top: -2rem;
+      word-wrap:break-word;
+      
+  }
+
+  .form-container{
+      height: 3vh;
+      padding-bottom: 3rem;
+  }
+
+
+  .submit-btn{
+      margin-top: 0.8rem;
+      width: 100%;
+  }
+
+  .wailist__tag{
+      margin-top: 4rem;
+      display: flex;
+      justify-content: center;
+    
+      
+     
+  }
+    
+}
+
+
+/* ====================MEDIA QUERIES (SMALL DEVICES) ===========================*/
+
+@media screen and (max-width: 600px){
+    .container__main{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        max-width: 100%;
+        margin: 0 auto;
+        background-color: none;
+        margin: 0;
+        
+    }
+  
+    .container__text-main{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+       max-width: 100%;
+       margin: 0 auto;
+       justify-content: center;
+       align-items: center;
+    }
+    
+    h1, h2{
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+   
+    .main__image{
+        order: 1;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        padding-top: 1rem;
+        margin: 0;
+    }
+  
+    .container__heading{
+        line-height: 1.2;
+        padding: 0;
+        margin-bottom: -2rem;
+    }
+    .container__text-main{
+        order: 2;
+        text-align: center;
+        margin-top: -2rem;
+        
+    }
+  
+    .email-field{
+        font-size: 0.8rem;
+    }
+    .form-container{
+        height: 1vh;
+        padding-bottom: 3rem;
+    }
+  
+  
+    .submit-btn{
+        margin-top: 1.3rem;
+        width: 100%;
+        padding: 1rem;
+    }
+  
+    .wailist__tag{
+        display: inline;
+       
+    }
+
+    .wailist__pic{
+        display: flex;
+        max-width: 40%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+}
