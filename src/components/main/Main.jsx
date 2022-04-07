@@ -2,7 +2,6 @@ import React from 'react'
 import './main.css'
 import Shopper from '../../assets/blufod-main-image.png'
 import Grouppic from '../../assets/profile-pic2.png'
-import HiOutlineMail from 'react-icons/hi'
 
 const Main = () => {
     const [formData, setFormData] = React.useState({
