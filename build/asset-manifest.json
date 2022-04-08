@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8048cc3a.css",
+    "main.js": "/static/js/main.d415f3b9.js",
+    "static/media/blufod-main-image.png": "/static/media/blufod-main-image.23a54daf9ee9969ee60a.png",
+    "static/media/customer-care-image.png": "/static/media/customer-care-image.a22105689d3062f9b785.png",
+    "static/media/phone-protection.svg": "/static/media/phone-protection.6a8a55977647b21559fabcee3dc12943.svg",
+    "static/media/Money_bag_perspective_matte2.png": "/static/media/Money_bag_perspective_matte2.4bd28ef1722f3cc72ba3.png",
+    "static/media/profile-pic2.png": "/static/media/profile-pic2.4782a0c80f794ec8bba6.png",
+    "static/media/Settings_perspective_matte4.png": "/static/media/Settings_perspective_matte4.aed9628557f2992762f0.png",
+    "static/media/Shield_perspective_matte1.png": "/static/media/Shield_perspective_matte1.55f56a32b0d279c734be.png",
+    "static/media/blufod-logo.png": "/static/media/blufod-logo.b8570ece32d1f5f3fca1.png",
+    "static/media/padlock_perspective.png": "/static/media/padlock_perspective.10000d106f1407086d22.png",
+    "static/media/code_perspective.png": "/static/media/code_perspective.d65fc5caca086ffdced7.png",
+    "static/media/Diagram_perspective_matte3.png": "/static/media/Diagram_perspective_matte3.7f7e9c408459ae4bcc52.png",
+    "index.html": "/index.html",
+    "main.8048cc3a.css.map": "/static/css/main.8048cc3a.css.map",
+    "main.d415f3b9.js.map": "/static/js/main.d415f3b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8048cc3a.css",
+    "static/js/main.d415f3b9.js"
+  ]
+}
