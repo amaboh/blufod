@@ -7,7 +7,7 @@ import Grouppic from '../../assets/profile-pic2.png'
 const Main = () => {
     const form = useRef();
 
-
+    
     const sendEmail= (event) => {
       event.preventDefault()
       
