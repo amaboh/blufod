@@ -11,7 +11,7 @@ const Footer = () => {
     <section className="container container__footer">
     <main className="footer__text">
           <img src={logo} alt="blufod logo"/>
-          <h3>Follow The Latest News About Blufod in our <span className="footer__blog"> <a href="/#">Blog</a></span></h3>
+          <h3>Follow The Latest News About Blufod in our <span className="footer__blog"> <a href="https://medium.com/@blufod" target="_blank">Blog</a></span></h3>
     </main>
      <div className="footer__social-media">
     <ul className="foooter__social-icons">

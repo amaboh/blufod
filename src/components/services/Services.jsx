@@ -1,30 +1,36 @@
-import React from 'react'
+import React, {useRef} from 'react'
+import emailjs from '@emailjs/browser'
 import './services.css'
 import phoneprotection from "../../assets/phone-protection.svg"
 import padlock from "../../assets/padlock_perspective.png"
 import developerSign from "../../assets/code_perspective.png"
 
 const Services = () => {
-
-  const [formData, setFormData] = React.useState({
-    email: ""
-  }) 
-
-  function handleChange(event){
-    const {name, value } = event.target
-    setFormData(prevForm =>{
-      return{
-        ...prevForm,
-        [name]: value
-      }
-    })
-  }
+  const form = useRef();
 
 
-  function handleSubmit(event){
-    event.preventDefault()      
+    const sendEmail = (event) => {
+      event.preventDefault()
+      
+      emailjs
+      .sendForm(
+        "service_3h4fyz9",
+        "template_8o8qwv9",
+        form.current,
+        "Tej-xIHn-TNxNK8Ky"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+          event.target.reset()
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      )
 
-  }
+}
   return (
     <section className="container container__services">
       <div className="container__service-body">
@@ -74,13 +80,12 @@ const Services = () => {
            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
          </div>
          <nav className="form-container form__contact">
-                <form onSubmit={handleSubmit}>
-                    <input type="email" name="email"
+         <form ref={form} onSubmit={sendEmail}>
+                    <input type="email" name="user_email"
                             className="email-field"
-                          value={formData.value}
                           placeholder= {'📨 Enter your email @'}
-                          onChange={handleChange}/>
-                    <button className="submit-btn">Get Invite</button>
+                        />
+                    <input  type="submit" className="submit-btn" value="Get Invite"/>
                 </form>
                 <small>Your privacy is our priority</small>
           </nav>
@@ -88,5 +93,6 @@ const Services = () => {
 </section>
   )
 }
+
 
 export default Services

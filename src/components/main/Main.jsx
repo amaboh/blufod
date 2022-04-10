@@ -1,28 +1,37 @@
-import React from 'react'
+import React, {useRef} from 'react'
+import emailjs from '@emailjs/browser'
 import './main.css'
 import Shopper from '../../assets/blufod-main-image.png'
 import Grouppic from '../../assets/profile-pic2.png'
 
 const Main = () => {
-    const [formData, setFormData] = React.useState({
-      email: ""
-    }) 
+    const form = useRef();
 
-    function handleChange(event){
-      const {name, value } = event.target
-      setFormData(prevForm =>{
-        return{
-          ...prevForm,
-          [name]: value
+
+    const sendEmail= (event) => {
+      event.preventDefault()
+      
+      emailjs
+      .sendForm(
+        "service_3h4fyz9",
+        "template_8o8qwv9",
+        form.current,
+        "Tej-xIHn-TNxNK8Ky"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+          event.target.reset()
+        },
+        (error) => {
+          console.log(error.text);
         }
-      })
-    }
-
-
-    function handleSubmit(event){
-      event.preventDefault()      
+      );
 
     }
+
+
   return (
   <section className="container__box">
       <div className="container container__main">
@@ -36,14 +45,14 @@ const Main = () => {
               Never ship a good service and do not get paid, and never pay for service which is completed.
               We safeguard both buyers and sellers in a transaction
            </p>
+
           <nav className="form-container">
-                <form onSubmit={handleSubmit}>
-                    <input type="email" name="email"
+                <form ref={form} onSubmit={sendEmail}>
+                    <input type="email" name="user_email"
                             className="email-field"
-                          value={formData.value}
                           placeholder= {'📨 Enter your email @'}
-                          onChange={handleChange}/>
-                    <button className="submit-btn">Get Invite</button>
+                        />
+                    <input  type="submit" className="submit-btn" value="Get Invite"/>
                 </form>
                 
           </nav>
