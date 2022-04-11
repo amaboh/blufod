@@ -7,11 +7,17 @@ import Benefits from './components/benefits/Benefits'
 import Services from './components/services/Services'
 import Footer from './components/footer/Footer'
 
+import {Helmet} from "react-helmet";
+
 
 
 function App() {
   return (
     <>
+      <Helmet>
+        <title>blufod | Online payments simplified</title>
+        <meta name="description" content="pay for anything with ease" />
+       </Helmet>
         <Header/>
         <Main/>
         <Features/>
