@@ -97,7 +97,8 @@
 
    .features__first-row{
        display: grid;
-       grid-template: 100px 100px 200px 200px/ 200px 300px 200px;
+       grid-template: 8rem 1rem / 15rem 28rem 
+       /* 100px 100px 200px 200px/ 200px 300px 200px; */
       
    }
     
