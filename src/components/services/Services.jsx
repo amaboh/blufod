@@ -57,7 +57,7 @@ const Services = () => {
                               which releases funds when both parties are satisfied.
                         </p>
                       </div>
-                      <div>
+                      <div  className="feature__image">
                           <img src={developerSign}/>
                       </div>
                 </div>
@@ -69,7 +69,7 @@ const Services = () => {
                               no chargeback, ever.
                             </p>
                         </div>
-                        <div>
+                        <div  className="feature__image">
                           <img src={padlock}/>
                         </div>
                   </div>
@@ -82,7 +82,7 @@ const Services = () => {
          <nav className="form-container form__contact">
          <form ref={form} onSubmit={sendEmail}>
                     <input type="email" name="user_email"
-                            className="email-field"
+                            className="email__input-service email-field"
                           placeholder= {'📨 Enter your email @'}
                         />
                     <input  type="submit" className="submit-btn" value="Get Invite"/>

@@ -2,7 +2,7 @@
 .container__main{
     display: grid;
     grid-template-columns: 55% 35%;
-    background-color: #F4F4FF;
+    background-color:#F4F4FF;
     border-radius: 1.25rem;
     position: relative;
    
@@ -144,6 +144,10 @@
     background-color: #4A5DE3;
 }
 
+.submit-btn:active{
+    transform: var(--transform-btn-md)
+}
+
 .email-field.hover{
     background-color:#f2f2f2;
 }
@@ -220,11 +224,17 @@
 /* ====================MEDIA QUERIES (SMALL DEVICES) ===========================*/
 
 @media screen and (max-width: 600px){
+    .container__box{
+        display: flex;
+        max-width: 98%;
+        justify-content: center;
+
+    }
     .container__main{
         display: flex;
         flex-direction: column;
         place-items: center;
-        max-width: 100%;
+        max-width: 85%;
         margin: 0 auto;
         background-color: none;
         margin: 0;
@@ -239,6 +249,7 @@
        margin: 0 auto;
        justify-content: center;
        align-items: center;
+       padding: 2rem 2rem;
     }
     
     h1, h2{

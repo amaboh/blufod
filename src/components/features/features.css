@@ -67,6 +67,10 @@
     
 }
 
+.feature__image:hover{
+    transform:var(--transform-btn-md);
+    transition: transform .2s;
+}
 
 
 /* ====================MEDIA QUERIES (MEDIUM DEVICES) ===========================*/

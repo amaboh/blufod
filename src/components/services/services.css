@@ -92,6 +92,8 @@
 .form__contact{
     width: 45%;
     text-align: center;
+    align-content: center;
+    padding-top: 2.5rem;
 }
 
 .form__contact small{
@@ -183,7 +185,20 @@
     }
 
     .form__contact{
-        width: 300px;
+        width: 18rem;
+        padding: 0rem;
+        margin-top: 6rem;
+        
+    }
+
+    .submit-btn{
+        position: relative;
+        
+    }
+
+    .email__input-service{
+        width: 18rem;
+       
     }
 
   }
