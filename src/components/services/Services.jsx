@@ -41,10 +41,14 @@ const Services = () => {
               <div className="services__area">
                 <h5>Developers</h5>
                     <div className="feature__text service__car">
-                      <h2 className="services__title">INTEGRATE OUR APIs</h2>
-                      <p className="services__p">Payments for your website, marketplace, classified site, 
-                        shopping cart or mobile app with no chargebacks, ever.
-                      </p>
+                      <h2 className="services__title">INTEGRATE OUR APIs To</h2>
+                      
+                  <ul className="servise__list-item">
+                    <li>✔ Collect one-time and recurring payments from your website or online shop</li> 
+                    <li> ✔ Retrieve all your transaction and customer data</li>
+                    <li> ✔ Make instant transfer or conditional transfers</li>
+                    <li> ✔ Make payments to verified retailers</li>
+                  </ul>
                   </div>
               </div>       
           </div>
@@ -53,8 +57,9 @@ const Services = () => {
               <div className="features__box service__developer ">
                       <div class="text__area">
                         <h2 className="services__title">Built For Developers By Developers</h2>
-                        <p>Buy or sell goods and services securely by using Blufod as means of payment 
-                              which releases funds when both parties are satisfied.
+                        <p> Programming is fun when using well documented APIs. That is just what
+                           we've dedicated ourselves in creating and documenting a very easy to use 
+                           API for complex projects to simple weekend hacks. Envision it, created it Blufod  
                         </p>
                       </div>
                       <div  className="feature__image">
@@ -75,9 +80,20 @@ const Services = () => {
                   </div>
        </main>
        <div className="container__contact">
-         <div class="contact__text">
-           <h2>Stay connected with us</h2>
-           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+         <div className="contact__text">
+           
+           <h4 class="wordCarousel">
+           <h6>Why blufod ?</h6>
+                <div className="contact__anime">
+                    
+                    <ul className="flip4">
+                        <li style={{color: '#0575f5'}}>No hidde fees!</li>
+                        <li style={{color: '#0758db'}}>Highly secured!</li>
+                        <li style={{color: '#2e17fc'}}>No maintenance fee!</li>
+                        <li style={{color: '#1500d1'}}>convince? Join us 😎</li>
+                    </ul>
+                </div>
+            </h4>
          </div>
          <nav className="form-container form__contact">
          <form ref={form} onSubmit={sendEmail}>
