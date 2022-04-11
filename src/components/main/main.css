@@ -193,7 +193,8 @@
   .container__text-main{
       order: 2;
       text-align: center;
-      margin-top: -2rem;
+      margin-top: -1rem;
+      padding-top: 1rem;
       word-wrap:break-word;
       
   }

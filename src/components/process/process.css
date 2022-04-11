@@ -150,6 +150,9 @@
   /* ====================MEDIA QUERIES (SMALL DEVICES) ===========================*/
   
   @media screen and (max-width:600px){
+    .process__container{
+        margin: 2rem 0rem 0rem 0rem;
+    }
 
     .container__feature{
         max-width: 600px;

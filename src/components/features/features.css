@@ -112,6 +112,9 @@
       
     }
  
+    .feature__text{
+        padding: 1rem 1rem 0rem 1rem;
+    }
     .feature__text p{
         max-width: 460px;
         padding: 0rem;
