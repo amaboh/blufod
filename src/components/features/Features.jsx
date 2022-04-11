@@ -50,7 +50,7 @@ const Features = () => {
           <div className="features__first-row">
               <div className="features__box feature-red">
                       <div class="text__area">
-                        <h2>Escrow Payment</h2>
+                        <h2>Milestone Payment</h2>
                         <p>Agree with the buyer and pay for goods or services in installments through our milestones option.
                         </p>
                       </div>

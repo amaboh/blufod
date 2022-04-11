@@ -129,6 +129,16 @@
     
 }
 
+/* animations */
+
+.heading__1:hover, 
+.heading__2:hover, 
+.heading__3:hover, 
+.heading__4:hover, 
+.heading__5:hover{
+    transform: var(--transform-btn-md)
+}
+
 /* ====================MEDIA QUERIES (LARGE DEVICES) ===========================*/
 
 @media screen and (max-width:1024px){

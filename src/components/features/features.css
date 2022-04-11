@@ -67,10 +67,30 @@
     
 }
 
+/* animations */
+
 .feature__image:hover{
     transform:var(--transform-btn-md);
     transition: transform .2s;
 }
+
+.feature__green:hover{
+    background: #3bdb9b;
+}
+
+.feature__yellow:hover{
+    background: #ff9e3d;
+}
+
+.feature-red:hover{
+    background:#fc5881;
+    /* #ff5e7e; */
+}
+
+.feature__purple:hover{
+    background:#6b3cfa;
+}
+
 
 
 /* ====================MEDIA QUERIES (MEDIUM DEVICES) ===========================*/
