@@ -42,7 +42,7 @@ const Main = () => {
             <h2>ONLINE FINANCIAL TRANSACTIONS</h2>
           </span>
           <p>Our mission is to protect both buyers and sellers in any goods or service transaction. 
-              Never ship a good service and do not get paid, and never pay for service which is uncompleted.
+              Never ship a good and do not get paid, and never pay for service which is uncompleted.
               We safeguard both buyers and sellers in a transaction
            </p>
 

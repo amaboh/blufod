@@ -59,7 +59,7 @@ const Services = () => {
                         <h2 className="services__title">Built For Developers By Developers</h2>
                         <p> Programming is fun when using well documented APIs. That is just what
                            we've dedicated ourselves in creating and documenting a very easy to use 
-                           API for complex projects to simple weekend hacks. Envision it, created it Blufod  
+                           API for complex projects to simple weekend hacks. Envision it, created it with Blufod  
                         </p>
                       </div>
                       <div  className="feature__image">
@@ -98,7 +98,7 @@ const Services = () => {
                         </li>
                         <li >
                           <h4 className="flip__text-clr">
-                          Saving charges? <span style={{color: '#2e17fc'}}>Nope !</span>
+                          Saving charges? <span style={{color: '#2e17fc'}}>No mola !</span>
                           </h4>
                         </li>
                         <li >
