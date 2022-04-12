@@ -83,14 +83,29 @@ const Services = () => {
          <div className="contact__text">
            
            <h4 class="wordCarousel">
-           <h6>Why blufod ?</h6>
+           <h6>why blufod ?</h6>
                 <div className="contact__anime">
                     
                     <ul className="flip4">
-                        <li style={{color: '#0575f5'}}>No hidde fees!</li>
-                        <li style={{color: '#0758db'}}>Highly secured!</li>
-                        <li style={{color: '#2e17fc'}}>No maintenance fee!</li>
-                        <li style={{color: '#1500d1'}}>convince? Join us 😎</li>
+                        <li >
+                          <h4 className="flip__text-clr">Maintaince fees? <span style={{color: '#0575f5'}}>None !</span>
+                          </h4>
+                        </li>
+                        <li >
+                          <h4 className="flip__text-clr">
+                            highly secured? <span style={{color: '#0758db'}}> confam.</span>
+                          </h4>
+                        </li>
+                        <li >
+                          <h4 className="flip__text-clr">
+                          Saving charges? <span style={{color: '#2e17fc'}}>Nope !</span>
+                          </h4>
+                        </li>
+                        <li >
+                          <h4 className="flip__text-clr">
+                          convince?<span style={{color: '#1500d1'}}> Sign up now 😎</span>
+                          </h4>
+                        </li>
                     </ul>
                 </div>
             </h4>

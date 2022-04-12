@@ -134,6 +134,10 @@
     margin-bottom: 45px;
     display: block;
   }
+
+  .flip__text-clr{
+      color: #94979c;
+  }
   
   .flip2 {
     -webkit-animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
@@ -422,13 +426,24 @@
        
     }
 
+    .servise__list-item{
+        line-height: 1.8;
+    }
+
     .contact__text{
         display: flex;
         flex-direction: column;
+        
     }
 
     .flip4{
        padding-left: -9rem;
+    }
+
+    .wordCarousel{
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
     }
 
   }
