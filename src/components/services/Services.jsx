@@ -154,7 +154,7 @@ function handleClick(){
       
          <nav className="form-container form__contact"> 
          <form ref={form} onSubmit={sendEmail}>
-                    <input type="email" name="email"
+                    <input type="email" autoFocus={true} name="email"
                             onChange={handleChange}
                             required className="email__input-service email-field"
                           placeholder= {'📨 Enter your email @'}

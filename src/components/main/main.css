@@ -286,38 +286,19 @@
     .container__text-main{
         order: 2;
         text-align: center;
-        margin-top: -1rem;
-        margin-bottom: -1rem;
+        margin-top: -2rem;
         
     }
-    .container__text-main p{
-        padding-bottom: -3rem;
-    }
+  
     .email-field{
         font-size: 0.8rem;
-        width: 18rem;
-       
     }
     .form-container{
-        background: none;
-        position: relative;
-        height: 0vh;
-        padding-bottom: 2rem;
+        height: 1vh;
+        padding-bottom: 3rem;
     }
-    
-    .container__box{
-        background: 1; 
-    }
-    
-
-    .form__contact{
-        background-color: none;
-        width: 1rem;
-        padding-top: -2rem;
-        border: none;
-
-        
-    }
+  
+  
     .submit-btn{
         margin-top: 1.3rem;
         width: 100%;
@@ -338,15 +319,6 @@
 
     .submit-btn:active{
         transform: var(--transform-btn-bg)
-    }
-
-    .email__check-text{
-        max-width: 80%;
-        text-align: center;
-        padding-left: 4.5rem;
-        margin-top: 1rem;
-
-        
     }
     
     
