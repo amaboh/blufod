@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useState,useEffect, useRef} from 'react'
 import emailjs from '@emailjs/browser'
 import './services.css'
 import phoneprotection from "../../assets/phone-protection.svg"
@@ -8,10 +8,24 @@ import developerSign from "../../assets/code_perspective.png"
 const Services = () => {
   const form = useRef();
 
+  const initialValues = { email: ""}
+  const [formValues, setFormValues] = useState(initialValues);
+  const [send, setSend] = useState(false)
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false)
 
-    const sendEmail = (event) => {
-      event.preventDefault()
-      
+
+  const handleChange=(e)=>{
+    const { name, value} = e.target;
+    setFormValues({ ...formValues, [name]: value });
+  
+  };
+
+  const sendEmail= (e) => {
+    e.preventDefault()
+   
+  
+    if(send){
       emailjs
       .sendForm(
         "service_3h4fyz9",
@@ -23,14 +37,41 @@ const Services = () => {
         (result) => {
           console.log(result.text);
           console.log("message sent");
-          event.target.reset()
+          e.target.reset()
         },
         (error) => {
           console.log(error.text);
         }
-      )
+      );     
+    }
+  }
 
+  useEffect(() => {
+    console.log(formErrors);
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+      setSend(true)
+    }
+  }, [formErrors]);
+
+
+
+  const validate=(values)=>{
+    const errors = {};
+    const regex =  /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    if(!values.email){
+      errors.email = "Email is required"
+    }else if (!regex.test(values.email)){
+      errors.email = "This is not a valid email address"
+    }
+    return errors;
+
+  };
+
+function handleClick(){
+  setFormErrors(validate(formValues));
+  setIsSubmit(true);
 }
+
   return (
     <section className="container container__services">
       <div className="container__service-body">
@@ -110,16 +151,28 @@ const Services = () => {
                 </div>
             </h4>
          </div>
-         <nav className="form-container form__contact">
+      
+         <nav className="form-container form__contact"> 
          <form ref={form} onSubmit={sendEmail}>
-                    <input type="email" name="user_email"
-                            className="email__input-service email-field"
+                    <input type="email" autoFocus={true} name="email"
+                            onChange={handleChange}
+                            required className="email__input-service email-field"
                           placeholder= {'📨 Enter your email @'}
                         />
-                    <input  type="submit" className="submit-btn" value="Get Invite"/>
+                      <button onClick={handleClick} className="submit-btn" > Get Invite</button>
+                    {/* <input  type="submit" className="submit-btn" value="Get Invite"/> */}
                 </form>
-                <small>Your privacy is our priority</small>
+                
+                <small> {!Object.keys(formErrors).length >= 1 ? <small>Your privacy is our priority</small> : <small className="email__check-text2">{formErrors.email}</small>
+                
+                  }</small>
+
+                
+                
+                
+                
           </nav>
+      
        </div>
 </section>
   )

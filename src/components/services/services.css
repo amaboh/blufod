@@ -107,6 +107,11 @@
     padding-top: 1.3rem;
 }
 
+.email__check-text2{
+    color: #fc5881;
+   
+}
+
 
 /* animation of our awesomeness */
 .wordCarousel {
@@ -134,6 +139,7 @@
     margin-bottom: 45px;
     display: block;
   }
+  
 
   .flip__text-clr{
       color: #94979c;

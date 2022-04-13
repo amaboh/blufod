@@ -112,6 +112,13 @@
 
 }
 
+.email__check-text{
+    display: flex;
+    color: #fc5881;
+    padding-left: 9rem;
+    padding-bottom: -13rem;
+}
+
 .email-field{
     height: 5vh;
     background-color:black;
@@ -151,6 +158,9 @@
 .email-field.hover{
     background-color:#f2f2f2;
 }
+
+/* animated effects for text connecting the dots */
+
 
 
 /* ====================MEDIA QUERIES (MEDIUM DEVICES) ===========================*/
@@ -214,8 +224,6 @@
       margin-top: 4rem;
       display: flex;
       justify-content: center;
-    
-      
      
   }
     
@@ -307,5 +315,10 @@
         justify-content: center;
         margin: 0 auto;
     }
+
+    .submit-btn:active{
+        transform: var(--transform-btn-bg)
+    }
+    
     
 }
