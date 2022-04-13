@@ -114,9 +114,10 @@
 
 .email__check-text{
     display: flex;
+    position:absolute;
     color: #fc5881;
     padding-left: 9rem;
-    padding-bottom: -13rem;
+    padding-top: -8rem;
 }
 
 .email-field{
