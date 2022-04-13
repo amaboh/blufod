@@ -6,6 +6,7 @@ import Grouppic from '../../assets/profile-pic2.png'
 
 const Main = () => {
     const form = useRef();
+    
 
     const initialValues = { email: ""}
     const [formValues, setFormValues] = useState(initialValues);
@@ -49,6 +50,7 @@ const Main = () => {
   
     useEffect(() => {
       console.log(formErrors);
+     
       if (Object.keys(formErrors).length === 0 && isSubmit) {
         setSend(true)
       }
@@ -87,7 +89,7 @@ const Main = () => {
            </p>
            <div>
            <small className="email__check-text">{formErrors.email}</small>
-          <nav className="form-container">
+          <nav className="form-container form__contact">
                 <form ref={form} onSubmit={sendEmail}>
                     <input type="email" autoFocus={true} name="email"
                             value={formValues.username}
