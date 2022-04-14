@@ -11,9 +11,9 @@ const Features = () => {
         <h5>Key Features</h5>
         <div className="feature__text">
             <h2>WHAT MAKES US <span className="text__color">DIFFERENT</span></h2>
-            <p>Our mission is to protect both buyers and sellers in any goods or service transaction.
-               Never ship a good service and do not get paid, and never pay for service which is completed. 
-               We safeguard both buyers and sellers in a transaction.</p>
+            <p>Traditional payment methods simple transfer money between two parties – they don't help to settle transactions based on both parties fulfilling their obligations.
+                Your safety is our top priority.  Our 24-hour fraud monitoring, data encryption, and authentication features keep your transactions and account secure. And for the first time, you can make a payment without any hesitation. Blufod has you covered.
+            </p>
         </div>
         
         <main className="features__container container">
@@ -23,8 +23,8 @@ const Features = () => {
                 <div className="features__box feature__green">
                     <div class="text__area">
                         <h2>Escrow Payment</h2>
-                        <p>Buy or sell goods and services securely by using Blufod as means of 
-                          payment which releases funds when both parties are satisfied.
+                        <p>Accept customer payments with a unique secured link generated for your business, 
+                          bond by escrow, and reach more clients.
                         </p>
                     </div>
                     <div className="feature__image">
@@ -34,7 +34,7 @@ const Features = () => {
 
                 <div className="features__box feature__yellow">
                     <div class="text__area">
-                        <h2>Save Now Pay Later</h2>
+                        <h2>Save Now Carry Later</h2>
                         <p>Purchase goods and services securely by making weekly or 
                           monthly savings towards payment of goods and ease the financial burden.
                         </p>

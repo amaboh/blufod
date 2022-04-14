@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>blufod | Online payments simplified</title>
+        <title>blufod | Simplified payments for social commerce</title>
         <meta name="description" content="pay for anything with ease" />
        </Helmet>
         <Header/>
