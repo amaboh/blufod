@@ -292,17 +292,23 @@
   
     .email-field{
         font-size: 0.8rem;
+        width: 18rem;
     }
     .form-container{
-        height: 1vh;
-        padding-bottom: 3rem;
+        background: none;
+        border: none;
+        
     }
   
   
     .submit-btn{
+        display: flex;
         margin-top: 1.3rem;
         width: 100%;
         padding: 1rem;
+        align-items: center;
+        justify-content: center;
+
     }
   
     .wailist__tag{

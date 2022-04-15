@@ -89,7 +89,7 @@ const Main = () => {
            <small className="email__check-text">{formErrors.email}</small>
           <nav className="form-container">
                 <form ref={form} onSubmit={sendEmail}>
-                    <input type="email" autoFocus={true} name="email"
+                    <input  type="email" name="email"
                             value={formValues.username}
                             onChange={handleChange}
                             className="email-field" required
