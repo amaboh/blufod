@@ -1,4 +1,5 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState, useEffect, useRef} from 'react';
+import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser'
 import './main.css'
 import Shopper from '../../assets/blufod-main-image.png'
@@ -6,8 +7,10 @@ import Grouppic from '../../assets/profile-pic2.png'
 
 const Main = () => {
     const form = useRef();
-
-    const initialValues = { email: ""}
+    const {t} = useTranslation(["main","common"]);
+    const numberRegistered = " +850"
+    
+    const initialValues = { email: ""};
     const [formValues, setFormValues] = useState(initialValues);
     const [send, setSend] = useState(false)
     const [formErrors, setFormErrors] = useState({});
@@ -76,14 +79,12 @@ const Main = () => {
   <section className="container__box">
       <div className="container container__main">
         <div className="container__text-main">
-          <h5 className>Conneting The Dots For</h5>
+          <h5 className>{t("main:connecting_dots")}</h5>
           <span className="container__heading">
-            <h1 className="container__title">FAST, SIMPLE AND <span className="text-color">SECURED</span></h1>
-            <h2>ONLINE FINANCIAL TRANSACTIONS</h2>
+            <h1 className="container__title">{t("headline_text")}<span className="text-color"> {t("main:headline_tcolor")}</span></h1>
+            <h2>{t("main:headline_tsmall")}</h2>
           </span>
-          <p>Our mission is to protect both buyers and sellers in any goods or service transaction. 
-              Never ship a good and do not get paid, and never pay for service which is uncompleted.
-              We safeguard both buyers and sellers in a transaction
+          <p>{t("main_text")}
            </p>
            <div>
            <small className="email__check-text">{formErrors.email}</small>
@@ -93,9 +94,9 @@ const Main = () => {
                             value={formValues.username}
                             onChange={handleChange}
                             className="email-field" required
-                          placeholder= {'📨 Enter your email @'}
+                          placeholder=  {t("common:enter_email")}
                         />
-                        <button onClick={handleClick} className="submit-btn" > Get Invite</button>
+                        <button onClick={handleClick} className="submit-btn" >{t("common:getinvite")}</button>
                     {/* <input  type="submit" className="submit-btn" value="Get Invite"/> */}
                 </form>
                
@@ -103,7 +104,7 @@ const Main = () => {
            </div>
         
          
-          <small className="wailist__tag"><img src={Grouppic} className="wailist__pic"/>  Join <span className="text-color"> +350 </span>  shoppers and merchants on our waitlist</small>
+          <small className="wailist__tag"><img src={Grouppic} className="wailist__pic"/>{t("main:join_t")} <span className="text-color"> {numberRegistered }</span>  {t("main:join_liner")}</small>
         </div>
         <main className="main__image">
           <img src={Shopper} alt="lady holding phone and shopping"/>

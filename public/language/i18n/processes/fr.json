@@ -1,0 +1,29 @@
+{
+    "process_heading" : " Notre processus",
+    "process_tag_line": "COMMENT ÇA ", 
+    "process_tcolor": "MARCHE ?",
+    "process_explainer":"Nous avons construit en prenant en considération les tracas de notre environnement local. Ainsi, notre processus assure un flux fluide et fiable des fonds des acheteurs aux vendeurs et des marchandises ou services du vendeur à l'acheteur, en 5 étapes simples.",
+
+    "process_one": "L'acheteur et le vendeur ce met d'accord :",
+    "process_one_list1": "✔ Description du produit ou le service",
+    "process_one_list2": "✔ Prix de vente et info sur l'expédition",
+    "process_one_list3": "✔ Nombre de jours pour l'inspection par l'acheteur",
+
+    "process_two": "L'acheteur effectue le paiement à Blufod :",
+    "process_two_list1" : "✔ L'acheteur soumet le paiement via les options disponibles.",
+    "process_two_list2" : "✔Blufod vérifie les reçus de paiement.",
+
+    "process_three" : " Le vendeur expédie la marchandise à l'acheteur ou offre des services :",
+    "process_three_list1": "✔Une fois le paiement vérifié, le vendeur de marchandises",
+    "process_three_list2": "✔Une fois le paiement vérifié, le vendeur de marchandises",
+
+    "process_four": " L'acheteur accepte la marchandise :",
+    "process_four_list1": "✔ L'acheteur accepte ou refuse la marchandise dans un délai convenu.",
+
+    "process_five": "Blufod libère le fonds au profit du vendeur :",
+    "process_five_list1": "✔ Blufod.com libère les fonds au vendeur via la méthode sélectionnée : La transaction est terminée."
+
+
+
+
+}

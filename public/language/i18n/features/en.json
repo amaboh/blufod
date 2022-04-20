@@ -1,0 +1,19 @@
+{
+    "feature_intro": "Key Features",
+    "features_difference": "WHAT MAKES US  ",
+    "different_t": "DIFFERENT",
+
+    "features_main_text":   "Traditional payment methods simply transfer money between two parties – they don't help to settle transactions based on both parties fulfilling their obligations. Your safety is our top priority. Our 24-hour fraud monitoring, data encryption, and authentication features keep your transactions and account secure. And for the first time, you can make a payment without any hesitation. Blufod has you covered",
+    "escrow_f": "Escrow Payment" ,
+    "escrow_p": " Accept customer payments with a unique secured link generated for your business, bond by escrow, and reach more clients.",
+    
+    "save_pay_f": "Save Now Carry Later",
+    "save_pay_p": "Purchase goods and services securely by making weekly or monthly savings towards payment of goods and ease the financial burden.",
+
+    "milestone_f": " Milestone Payment",
+    "milestone_p": " Agree with the buyer and pay for goods or services in installments through our milestones option.",
+
+    "api_f": "Wallet Api Integration",
+    "api_p": "Integrate our APIs and accept one-time or recurring payments for your website, store, or eCommerce."
+
+}

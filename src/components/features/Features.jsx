@@ -5,14 +5,16 @@ import Pie from '../../assets/Diagram_perspective_matte3.png'
 import Settings from '../../assets/Settings_perspective_matte4.png'
 import MoneyBag from '../../assets/Money_bag_perspective_matte2.png'
 
+import { useTranslation } from 'react-i18next'
+
 const Features = () => {
+  const {t} = useTranslation(["features"])
   return (
     <section className="container container__feature">
-        <h5>Key Features</h5>
+        <h5>{t("feature_intro")}</h5>
         <div className="feature__text">
-            <h2>WHAT MAKES US <span className="text__color">DIFFERENT</span></h2>
-            <p>Traditional payment methods simple transfer money between two parties – they don't help to settle transactions based on both parties fulfilling their obligations.
-                Your safety is our top priority.  Our 24-hour fraud monitoring, data encryption, and authentication features keep your transactions and account secure. And for the first time, you can make a payment without any hesitation. Blufod has you covered.
+            <h2>{t("features_difference")} <span className="text__color">{t("different_t")}</span></h2>
+            <p>{t( "features_main_text")}
             </p>
         </div>
         
@@ -22,9 +24,8 @@ const Features = () => {
 
                 <div className="features__box feature__green">
                     <div class="text__area">
-                        <h2>Escrow Payment</h2>
-                        <p>Accept customer payments with a unique secured link generated for your business, 
-                          bond by escrow, and reach more clients.
+                        <h2>{t("escrow_f")}</h2>
+                        <p> {t("escrow_p")}
                         </p>
                     </div>
                     <div className="feature__image">
@@ -34,9 +35,8 @@ const Features = () => {
 
                 <div className="features__box feature__yellow">
                     <div class="text__area">
-                        <h2>Save Now Carry Later</h2>
-                        <p>Purchase goods and services securely by making weekly or 
-                          monthly savings towards payment of goods and ease the financial burden.
+                        <h2>{t("save_pay_f")} </h2>
+                        <p>{t("save_pay_p")}
                         </p>
                     </div>
                     <div className="feature__image">
@@ -50,8 +50,8 @@ const Features = () => {
           <div className="features__first-row">
               <div className="features__box feature-red">
                       <div class="text__area">
-                        <h2>Milestone Payment</h2>
-                        <p>Agree with the buyer and pay for goods or services in installments through our milestones option.
+                        <h2>{t("milestone_f")}</h2>
+                        <p> {t("milestone_p")}
                         </p>
                       </div>
                       <div className="feature__image">
@@ -61,8 +61,8 @@ const Features = () => {
 
               <div className="features__box feature__purple">
                       <div class="text__area">
-                        <h2>Wallet Api Integration</h2>
-                        <p>Integrate our APIs and accept one-time or recurring payments for your website, store, or eCommerce.
+                        <h2>{t("api_f")} </h2>
+                        <p> {t("api_p")}
                         </p>
                       </div>
                       <div className="feature__image">

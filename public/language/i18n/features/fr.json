@@ -1,0 +1,20 @@
+{
+    "feature_intro": "Fonctionnalités ",
+    "features_difference": " CE QUI NOUS REND  ",
+    "different_t": "DIFFÉRENTS",
+    
+    "features_main_text": "Les méthodes de paiement traditionnelles ne font que transférer de l'argent entre deux parties - elles ne permettent pas de régler les transactions sur la base du respect des obligations des deux parties. Votre sécurité est notre priorité absolue. Notre surveillance des fraudes 24 heures sur 24, le cryptage des données et les fonctions d'authentification assurent la sécurité de vos transactions et de votre compte. Et pour la première fois, vous pouvez effectuer un paiement sans aucune hésitation. Blufod vous couvre.",
+   
+    "escrow_f": "Paiement séquestre",
+    "escrow_p": "Acceptez les paiements de vos clients grâce à un lien sécurisé unique généré pour votre entreprise, cautionné par un séquestre, et touchez davantage de clients.",
+    
+    "save_pay_f": " Payer petit à petit",
+    "save_pay_p": "Achetez des biens et des services en toute sécurité en faisant des économies hebdomadaires ou mensuelles pour le paiement des biens et alléger la charge financière.",
+
+    "milestone_f":"Paiement   échelonné",
+    "milestone_p": "Convenez avec l'acheteur et payez les biens ou les services en plusieurs versements grâce à notre option de jalonnement.", 
+
+    "api_f": "Intégrez notre API", 
+    "api_p": "Intégrez nos API et acceptez des paiements ponctuels ou récurrents pour votre site web, votre boutique ou votre commerce électronique."
+
+}

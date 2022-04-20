@@ -392,6 +392,11 @@
         grid-template: 8rem 1rem / 15rem 28rem;
     
     }
+
+    .servise__list-item li{
+      margin-top: 0.8rem;
+      line-height: 1.5rem;
+    }
     
     .service__developer, .service__yellow{
         grid-row: span 3;

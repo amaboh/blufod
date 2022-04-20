@@ -1,0 +1,22 @@
+{
+    "service_tag": " Développeurs",
+    "service_heading" : "INTÉGRER NOS API",
+    "service_heading_list1" : "✔ Collectez les paiements ponctuels et récurrents depuis votre site web ou votre boutique en ligne.",
+    "service_heading_list2" : "✔ Récupérez toutes vos données de transactions et de clients.",
+    "service_heading_list3" : "✔ Effectuez des virements instantanés ou des virements conditionnels",
+    "service_heading_list4" : "✔ Effectuez des paiements à des détaillants vérifiés.",
+
+    "service_one": "Conçu pour les développeurs",
+    "service_one_text" : "La programmation est un plaisir lorsqu'on utilise des API bien documentées. C'est exactement ce à quoi nous nous sommes consacrés en créant et en documentant une API très facile à utiliser pour des projets complexes ou pour de simples hacks de week-end. Imaginez-la, créez-la avec Blufod.",
+
+    "valid_address_messgae": "Cette adresse électronique n'est pas valide",
+    "service_two" : "Protéger à la fois les acheteurs et les vendeurs ",
+    "service_two_text": "Grâce au séquestre, les acheteurs peuvent inspecter les biens ou les services avant de les accepter, ce qui les protège. De même, les vendeurs sont protégés du risque de contrepartie par l'absence de rétrofacturation, jamais.",
+    "why_blufod": "pourQ blufod?",
+    "maintainance_fee" : "Frais d'entretien?",
+    "saving_charges": "frais d'épargne",
+    "convince": "convaincu ?",
+    "sign_up" : "S'inscrire 😎",
+    "privacy_text": "vos données sont sécurisées"
+
+}

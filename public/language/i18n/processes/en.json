@@ -1,0 +1,29 @@
+{
+    "process_heading" : " Our Process",
+    "process_tag_line": "HOW IT", 
+    "process_tcolor": "WORKS? ",
+    "process_explainer":"We’ve built taking into consideration the hassle of our local environment. Thus our process ensures a smooth and reliable flow of funds from buyers to sellers and merchandise or service from the seller to buyer, in 5 simple steps. ",
+
+    "process_one": "Buyer And Seller Agree To Terms:",
+    "process_one_list1": "✔ Description of merchandise or services",
+    "process_one_list2": "✔ Sale price and Shipping information",
+    "process_one_list3": "✔ Number of days for buyer inspection",
+
+    "process_two": "Buyer Makes Payment to Blufod:",
+    "process_two_list1" : "✔ Buyer submits payment via available options",
+    "process_two_list2" : "✔Blufod verifies receipts of payment",
+
+    "process_three" : "Seller deliverss Merchandise To Buyer Or Offer Services:",
+    "process_three_list1": " ✔Upon payment verification of merchandise",
+    "process_three_list2": "✔ Seller submits proof of delivery",
+
+    "process_four": "Buyer Accepts Merchandise:",
+    "process_four_list1": "✔ Buyer accepts or rejects merchandise within a specified timeframe",
+
+    "process_five": "Blufod Releases Fund To The Seller:",
+    "process_five_list1": "✔ Blufod.com releases funds to the seller via the method selected: Transaction is complete Safely and Securely."
+
+
+
+
+}

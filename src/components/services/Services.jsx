@@ -5,8 +5,11 @@ import phoneprotection from "../../assets/phone-protection.svg"
 import padlock from "../../assets/padlock_perspective.png"
 import developerSign from "../../assets/code_perspective.png"
 
+import {useTranslation} from "react-i18next"
+
 const Services = () => {
   const form = useRef();
+  const {t} = useTranslation(["common", "services",])
 
   const initialValues = { email: ""}
   const [formValues, setFormValues] = useState(initialValues);
@@ -54,7 +57,6 @@ const Services = () => {
   }, [formErrors]);
 
 
-
   const validate=(values)=>{
     const errors = {};
     const regex =  /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -80,15 +82,16 @@ function handleClick(){
               </main>
             <div className="service__text-form">
               <div className="services__area">
-                <h5>Developers</h5>
+                <h5>{t("services:service_tag")}</h5>
                     <div className="feature__text service__car">
-                      <h2 className="services__title">INTEGRATE OUR APIs To</h2>
+                      <h2 className="services__title">{t("services:service_heading")}</h2>
                       
                   <ul className="servise__list-item">
-                    <li>✔ Collect one-time and recurring payments from your website or online shop</li> 
-                    <li> ✔ Retrieve all your transaction and customer data</li>
-                    <li> ✔ Make instant transfer or conditional transfers</li>
-                    <li> ✔ Make payments to verified retailers</li>
+                    <li>{t("services:service_heading_list1")}</li> 
+                    <li> {t("services:service_heading_list2")}</li>
+                    <li>{t("services:service_heading_list2")}</li>
+                    <li> {t("services:service_heading_list3")}</li>
+                    <li> {t("services:service_heading_list4")}</li>
                   </ul>
                   </div>
               </div>       
@@ -97,10 +100,8 @@ function handleClick(){
        <main className=" service__type">
               <div className="features__box service__developer ">
                       <div class="text__area">
-                        <h2 className="services__title">Built For Developers By Developers</h2>
-                        <p> Programming is fun when using well documented APIs. That is just what
-                           we've dedicated ourselves in creating and documenting a very easy to use 
-                           API for complex projects to simple weekend hacks. Envision it, created it with Blufod  
+                        <h2 className="services__title">{t("services:service_one")}</h2>
+                        <p> {t("services:service_one_text")}
                         </p>
                       </div>
                       <div  className="feature__image">
@@ -109,10 +110,8 @@ function handleClick(){
                 </div>
                   <div className="features__box service__yellow">
                         <div class="text__area">
-                            <h2 className="services__title">Protecting Both Buyers And Sellers</h2>
-                            <p>Using escrow, buyers get to inspect the goods or services before accepting them, 
-                              protecting the buyer. Likewise, sellers are protected from counterparty risk by 
-                              no chargeback, ever.
+                            <h2 className="services__title">{t("services:service_two")}</h2>
+                            <p>{t('services:service_two_text')}
                             </p>
                         </div>
                         <div  className="feature__image">
@@ -124,12 +123,12 @@ function handleClick(){
          <div className="contact__text">
            
            <h4 class="wordCarousel">
-           <h6>why blufod ?</h6>
+           <h6>{t("services:why_blufod")}</h6>
                 <div className="contact__anime">
                     
                     <ul className="flip4">
                         <li >
-                          <h4 className="flip__text-clr">Maintaince fees? <span style={{color: '#0575f5'}}>None !</span>
+                          <h4 className="flip__text-clr">{t("services:maintainance_fee")} <span style={{color: '#0575f5'}}>None !</span>
                           </h4>
                         </li>
                         <li >
@@ -139,12 +138,12 @@ function handleClick(){
                         </li>
                         <li >
                           <h4 className="flip__text-clr">
-                          Saving charges? <span style={{color: '#2e17fc'}}>No mola !</span>
+                          {t("saving_charges")} <span style={{color: '#2e17fc'}}>No mola !</span>
                           </h4>
                         </li>
                         <li >
                           <h4 className="flip__text-clr">
-                          convince?<span style={{color: '#1500d1'}}> Sign up now 😎</span>
+                          {t("services:convince")}<span style={{color: '#1500d1'}}> {t("services:sign_up")}</span>
                           </h4>
                         </li>
                     </ul>
@@ -157,13 +156,13 @@ function handleClick(){
                     <input type="email" name="email"
                             onChange={handleChange}
                             required className="email__input-service email-field"
-                          placeholder= {'📨 Enter your email @'}
+                          placeholder= {t("common:enter_email")}
                         />
-                      <button onClick={handleClick} className="submit-btn" > Get Invite</button>
+                      <button onClick={handleClick} className="submit-btn" > {t("common:getinvite")}</button>
                     {/* <input  type="submit" className="submit-btn" value="Get Invite"/> */}
                 </form>
                 
-                <small> {!Object.keys(formErrors).length >= 1 ? <small>Your privacy is our priority</small> : <small className="email__check-text2">{formErrors.email}</small>
+                <small> {!Object.keys(formErrors).length >= 1 ? <small>{t("privacy_text")}</small> : <small className="email__check-text2">{formErrors.email}</small>
                 
                   }</small>
 

@@ -1,0 +1,23 @@
+{
+    "service_tag": "Developers",
+    "service_heading" : "INTEGRATE OUR APIs To",
+    "service_heading_list1" : "✔ Collect one-time and recurring payments from your website or online shop",
+    "service_heading_list2" : "✔ Retrieve all your transaction and customer data",
+    "service_heading_list3" : "✔ Make instant transfer or conditional transfers",
+    "service_heading_list4" : "✔ Make payments to verified retailers",
+
+    "service_one": "Built For Developers By Developers",
+    "service_one_text" : " Programming is fun when using well documented APIs. That is just what we've dedicated ourselves in creating and documenting a very easy-to-use API for complex projects to simple weekend hacks. Envision it, created it with Blufod.",
+
+    "valid_address_messgage": "This is not a valid email address",
+    "service_two" : "Protecting Both Buyers And Sellers",
+    "service_two_text": "Using escrow, buyers get to inspect the goods or services before accepting them, protecting the buyer. Likewise, sellers are protected from counterparty risk by no chargeback, ever.",
+    "why_blufod": "why blufod ?",
+    "maintainance_fee" : "Maintaince fees?",
+    "saving_charges": "savings fee",
+    "convince": "convince ?",
+    "sign_up" : "Sign up now 😎",
+    "privacy_text": "Your privacy is our priority"
+
+
+}
