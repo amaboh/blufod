@@ -138,7 +138,7 @@ function handleClick(){
                         </li>
                         <li >
                           <h4 className="flip__text-clr">
-                          {t("saving_charges")} <span style={{color: '#2e17fc'}}>No mola !</span>
+                          {t("services:saving_charges")} <span style={{color: '#2e17fc'}}>No mola !</span>
                           </h4>
                         </li>
                         <li >
