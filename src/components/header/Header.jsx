@@ -24,12 +24,14 @@ const handleLanguageChange = (e) => {
   return (
     <header>
       <div className="container container__header">
-        <Container>
+        
             
             <Navbar expand="sm"
                     bg="ligth" 
                     collapseOnSelect 
-                    fixed="top" >
+                    fixed="top"
+                     >
+              <Container style={{alignItems: 'center' }}>
               <Navbar.Brand href="/">
                 <div className="logo__img">
                   <img src={logo} alt="logo of blufod" className='logo__img-box'/>
@@ -38,7 +40,7 @@ const handleLanguageChange = (e) => {
               <Navbar.Toggle className="coloring" />
               <Navbar.Collapse className="justify-content-end">
 
-              <Nav>
+              <Nav className="nav">
                 <li className="nav-item">
                     <select
                       className="nav-link bg-ligth border-0 ml-1 mr-2"
@@ -55,7 +57,7 @@ const handleLanguageChange = (e) => {
         
               </Navbar.Collapse>
                   
-
+        </Container>
         </Navbar>
      
 
@@ -75,7 +77,7 @@ const handleLanguageChange = (e) => {
           <a href="https://medium.com/@blufod">Blog</a>
         </div>
       */}
-      </Container>
+    
       </div> 
     </header>
   )

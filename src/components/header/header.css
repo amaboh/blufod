@@ -11,6 +11,7 @@
     backdrop-filter: blur(15px);
     top: 0;
     -webkit-backdrop-filter: blur(30px);
+    
 }
 
 .logo__img{
@@ -29,12 +30,15 @@
 
 .navBlog{
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+ 
 }
 
 .nav-item{
     padding-right: 1rem;
     font-size: 1.1rem;
+    align-self: center;
+  
 }
 
 header{
@@ -78,4 +82,7 @@ header{
         display: none;
     }
     
+    .nav-item{
+        align-self: flex-start;
+    }
 }
