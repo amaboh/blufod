@@ -36,7 +36,7 @@ const handleLanguageChange = (e) => {
                 <option value="fr">FR🇫🇷</option>
               </select>
             </li>
-          <a href="/#">Blog</a>
+          <a href="https://medium.com/@blufod">Blog</a>
         </div>
   
       </div>

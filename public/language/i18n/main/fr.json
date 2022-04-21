@@ -1,11 +1,12 @@
 {
-    "connecting_dots":"Connecting the dots for ",
+    "connecting_dots":"Connecting the dots... ",
     "headline_text": "RAPIDE, SIMPLE ET",
     "headline_tcolor": "SÉCURISÉ",
     "headline_tsmall":"TRANSACTIONS FINANCIÈRES EN LIGNE",
 
-    "main_text": "Notre mission est de protéger à la fois les acheteurs et les vendeurs dans toute transaction de biens ou de services. N'expédiez jamais un bien sans être payé, et ne payez jamais pour un service qui n'est pas terminé. Nous protégeons à la fois les acheteurs et les vendeurs lors d'une transaction.",
+    "main_text": "Notre mission est d'instaurer la confiance entre acheteurs et vendeurs dans toute transaction de biens ou de services. N'expédiez jamais un bien sans être payé, et ne payez jamais pour un service qui n'est pas terminé. Nous protégeons à la fois les acheteurs et les vendeurs lors d'une transaction.",
     "join_t":"Rejoignez ",
-    "join_liner": "acheteurs et commerçants sur notre liste d'attente"
+    "join_liner": "acheteurs et commerçants sur notre liste d'attente",
+    "success_message": "Merci de vous être inscrit, votre e-mail a été envoyé avec succès !"
 
 }

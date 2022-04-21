@@ -5,9 +5,13 @@ import './main.css'
 import Shopper from '../../assets/blufod-main-image.png'
 import Grouppic from '../../assets/profile-pic2.png'
 
+import Swal from 'sweetalert2'
+
 const Main = () => {
     const form = useRef();
     const {t} = useTranslation(["main","common"]);
+    const Swal = require('sweetalert2')
+
     const numberRegistered = " +850"
     
     const initialValues = { email: ""};
@@ -42,9 +46,29 @@ const Main = () => {
             console.log(result.text);
             console.log("message sent");
             e.target.reset()
+            Swal.fire({
+              title: "Email sucessfully delivered. We're excited to have you on board!",
+              width: 600,
+              padding: '3em',
+              color: '#716add',
+              background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+              backdrop: `
+                rgba(0,0,123,0.4)
+                url("https://sweetalert2.github.io/images/nyan-cat.gif")
+                left top
+                no-repeat
+              `
+            })
           },
           (error) => {
             console.log(error.text);
+            Swal.fire({
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Something went wrong!',
+             
+            })
+            
           }
         );     
       }

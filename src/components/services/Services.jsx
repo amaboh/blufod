@@ -6,10 +6,12 @@ import padlock from "../../assets/padlock_perspective.png"
 import developerSign from "../../assets/code_perspective.png"
 
 import {useTranslation} from "react-i18next"
+import Swal from 'sweetalert2'
 
 const Services = () => {
   const form = useRef();
   const {t} = useTranslation(["common", "services",])
+  const Swal = require('sweetalert2')
 
   const initialValues = { email: ""}
   const [formValues, setFormValues] = useState(initialValues);
@@ -41,9 +43,28 @@ const Services = () => {
           console.log(result.text);
           console.log("message sent");
           e.target.reset()
+          Swal.fire({
+            title: "Email sucessfully delivered. We're excited to have you on board!",
+            width: 600,
+            padding: '3em',
+            color: '#716add',
+            background: '#fff url(https://sweetalert2.github.io/images/trees.png)',
+            backdrop: `
+              rgba(0,0,123,0.4)
+              url("https://sweetalert2.github.io/images/nyan-cat.gif")
+              left top
+              no-repeat
+            `
+          })
         },
         (error) => {
           console.log(error.text);
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+           
+          })
         }
       );     
     }
