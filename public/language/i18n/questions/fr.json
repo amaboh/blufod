@@ -1,0 +1,21 @@
+{
+    "question_one": "“Si un acheteur retourne un article, qui paie les frais d'expédition ? ",
+    "response_one_q1" : "L'acheteur a la possibilité d'accepter ou de refuser l'article, et il lui incombe donc de payer les frais de retour.",
+    "response_two_q1" : "Une fois que le vendeur aura accepté l'article retourné, blufod remboursera l'acheteur moins les frais de Blufod.",
+
+    "question_two" : "Qui paie les frais de Blufod ?",
+    "response_two" : "Les acheteurs et les vendeurs déterminent quelle partie est responsable des frais de Blufod. Ils peuvent tous deux convenir de l'une des trois options de paiement :",
+
+
+    "question_three" : "Quelle est la forme de paiement acceptée par blufod ?",
+    "response_three": "Les utilisateurs ont dès à présent deux options pour charger leur compte Blufod en utilisant MTN Momo et Orange Cameroon mobile money et effectuer des paiements.",
+
+    "question_four": "Combien de temps faut-il pour recevoir mon argent en tant que vendeur ?",
+    "response_four":"Dès que les conditions de vente du vendeur et de l'acheteur sont remplies, Blufod libère l'argent sur les comptes du vendeur, et ce automatiquement avec un délai maximum de 24h.",
+
+    "question_five": "Combien cela coûte-t-il d'utiliser les services de blufod.com ?",
+    "response_five" : "Les frais de service sont un pourcentage du montant du prix d'achat ou du niveau de service. Ce qui correspond à seulement 2% de la valeur totale du service ou du bien. "
+
+
+
+}

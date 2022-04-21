@@ -14,7 +14,7 @@
 }
 
 .logo__img{
-    width: 7rem;
+    width: 9rem;
 }
 
 
@@ -22,11 +22,19 @@
     display: flex;
     justify-content: space-between;
     color: #060F3D;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    
+}
+
+
+.navBlog{
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .nav-item{
     padding-right: 1rem;
+    font-size: 1.1rem;
 }
 
 header{

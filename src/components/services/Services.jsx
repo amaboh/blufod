@@ -5,6 +5,8 @@ import phoneprotection from "../../assets/phone-protection.svg"
 import padlock from "../../assets/padlock_perspective.png"
 import developerSign from "../../assets/code_perspective.png"
 
+import Faquestions from '../../general/Faquestions'
+
 import {useTranslation} from "react-i18next"
 import Swal from 'sweetalert2'
 
@@ -103,18 +105,18 @@ function handleClick(){
               </main>
             <div className="service__text-form">
               <div className="services__area">
-                <h5>{t("services:service_tag")}</h5>
+                    <h5>{t("services:service_tag")}</h5>
                     <div className="feature__text service__car">
                       <h2 className="services__title">{t("services:service_heading")}</h2>
                       
-                  <ul className="servise__list-item">
-                    <li>{t("services:service_heading_list1")}</li> 
-                    <li> {t("services:service_heading_list2")}</li>
-                    <li>{t("services:service_heading_list2")}</li>
-                    <li> {t("services:service_heading_list3")}</li>
-                    <li> {t("services:service_heading_list4")}</li>
-                  </ul>
-                  </div>
+                        <ul className="servise__list-item">
+                          <li>{t("services:service_heading_list1")}</li> 
+                          <li> {t("services:service_heading_list2")}</li>
+                          <li>{t("services:service_heading_list2")}</li>
+                          <li> {t("services:service_heading_list3")}</li>
+                          <li> {t("services:service_heading_list4")}</li>
+                        </ul>
+                    </div>
               </div>       
           </div>
       </div>
@@ -140,6 +142,7 @@ function handleClick(){
                         </div>
                   </div>
        </main>
+       <Faquestions/>
        <div className="container__contact">
          <div className="contact__text">
            
@@ -171,7 +174,7 @@ function handleClick(){
                 </div>
             </h4>
          </div>
-      
+
          <nav className="form-container form__contact"> 
          <form ref={form} onSubmit={sendEmail}>
                     <input type="email" name="email"

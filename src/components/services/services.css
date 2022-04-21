@@ -347,7 +347,8 @@
         margin: 0 auto;
         padding: 0;
         justify-content: center;
-        padding: 01rem 0.5rem;
+        padding: 01rem 0rem;
+  
        
     
     }
@@ -358,15 +359,14 @@
       }
     
     .service__text-form{
-        padding: 0 1rem;
+        padding: 0rem;
         text-align: center;
-        width: 100%;
+        max-width: 40rem;
         
     }
 
     .feature__text{
-       
-        max-width: 100%;
+        max-width: 600px;
         margin: 0 auto;
     }
 
@@ -374,17 +374,17 @@
         display:flex;
         flex-direction: column;
         max-width: 100%;
-        padding: 0rem 0rem 2rem;
+        padding: 0rem 0rem 2rem 0;
         justify-content: center;
         margin: 0 auto;
         
     }  
 
     .services__area h5{
-        max-width: 60%;
+        max-width: 80%;
         justify-content: center;
         margin: 0 auto;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .service__type{
@@ -395,7 +395,7 @@
 
     .servise__list-item li{
       margin-top: 0.8rem;
-      line-height: 1.5rem;
+      line-height: 1.4rem;
     }
     
     .service__developer, .service__yellow{
@@ -442,6 +442,10 @@
 
     .servise__list-item{
         line-height: 1.8;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        
     }
 
     .contact__text{

@@ -13,7 +13,7 @@
     "process_two_list1" : "✔ Buyer submits payment via available options",
     "process_two_list2" : "✔Blufod verifies receipts of payment",
 
-    "process_three" : "Seller deliverss Merchandise To Buyer Or Offer Services:",
+    "process_three" : "Seller delivers Merchandise To Buyer Or Offer Services:",
     "process_three_list1": " ✔Upon payment verification of merchandise",
     "process_three_list2": "✔ Seller submits proof of delivery",
 

@@ -5,7 +5,9 @@ import './main.css'
 import Shopper from '../../assets/blufod-main-image.png'
 import Grouppic from '../../assets/profile-pic2.png'
 
+
 import Swal from 'sweetalert2'
+
 
 const Main = () => {
     const form = useRef();
@@ -101,6 +103,7 @@ const Main = () => {
 
   return (
   <section className="container__box">
+
       <div className="container container__main">
         <div className="container__text-main">
           <h5 className>{t("main:connecting_dots")}</h5>

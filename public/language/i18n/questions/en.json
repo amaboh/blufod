@@ -1,0 +1,21 @@
+{
+    "question_one": "If a buyer returns an item, who pays for the shipping? ",
+    "response_one_q1" : "The buyer has the option to ‘’accept’’ or ‘’reject’’ the item, thus the buyer has the responsibility to pay for the return shipping cost.",
+    "response_two_q1" : "Once the seller accepts the returned item, blufod will refund the buyer minus Blufod's charges.",
+
+    "question_two" : "Who pays for the blufod fees?",
+    "response_two" : "Both buyers and sellers determine which party is responsible for the blufod fees. They can both agree on who to bare the charges.",
+    
+
+    "question_three" : "What form of payment does blufod accept?",
+    "response_three": "Users as of now have two options to load their Blufod account using MTN Momo and Orange Cameroon mobile money and make payments.",
+
+    "question_four": "How long does it take to get my money as a seller?",
+    "response_four": "Immediately the seller's and buyers' conditions of sales are met, Blufod releases the money into the seller's accounts, and automatically with a maximum time limit of 24hours.",
+
+    "question_five": "How much does it cost to use blufod.com services?",
+    "response_five" : "The service fee is a percentage of the amount on the purchase price or service level. Which is at just 2% of the total value of the service or good."
+
+
+
+}
