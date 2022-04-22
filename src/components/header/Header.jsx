@@ -1,11 +1,16 @@
 import React, {useEffect} from 'react'
 import './header.css'
 import logo from '../../assets/blufod-logo.png'
+import logowp from '../../assets/blufod-logo.webp'
 
 import {useTranslation} from "react-i18next";
 import i18next from "i18next";
 import 'bootstrap/dist/css/bootstrap.css'
 import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap'
+
+import Image from "react-image-webp";
+
+
 
 
 export const Header = () => {
@@ -34,7 +39,14 @@ const handleLanguageChange = (e) => {
               <Container style={{alignItems: 'center' }}>
               <Navbar.Brand href="/">
                 <div className="logo__img">
-                  <img src={logo} alt="logo of blufod" className='logo__img-box'/>
+                    <Image
+                        alt="logo of blufod" 
+                        className='logo__img-box'
+                        src={require("../../assets/blufod-logo.png")} 
+                        webp={require("../../assets/blufod-logo.webp")}
+                        
+                        />
+                    
                 </div>
               </Navbar.Brand>
               <Navbar.Toggle className="coloring" />

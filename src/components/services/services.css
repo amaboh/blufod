@@ -4,6 +4,7 @@
 
 .container__services{
     margin-top: 5rem;
+
 }
 
 .container__service-body{
@@ -31,7 +32,7 @@
 }
 
 .services__main-image{
-    width: 30%
+    width: 40%
 }
 
 .services__area{
@@ -111,6 +112,7 @@
     color: #fc5881;
    
 }
+
 
 
 /* animation of our awesomeness */
@@ -334,8 +336,39 @@
     
   }
   
+  /* =================MEDIA QUERIES (MEDIUM DEVICES) =========================*/
+
+
+  @media screen and (max-width:800Px){
+
+    .container__service-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .services__main-image{
+          width: 90%;
+          align-self: baseline;
+        }
+
+      .services__area h5, .services__title{
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .form-container{
+        background: none;
+        border: none;
+      }
+
+      .email-field{
+        font-size: 0.8rem;
+        width: 18rem;
+    }
+
+  }
   
-  
+
   /* ====================MEDIA QUERIES (SMALL DEVICES) ===========================*/
   
   @media screen and (max-width:600px){

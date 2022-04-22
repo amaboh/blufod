@@ -2,13 +2,14 @@ import React, {useState,useEffect, useRef} from 'react'
 import emailjs from '@emailjs/browser'
 import './services.css'
 import phoneprotection from "../../assets/phone-protection.svg"
-import padlock from "../../assets/padlock_perspective.png"
-import developerSign from "../../assets/code_perspective.png"
+
+
 
 import Faquestions from '../../general/Faquestions'
 
 import {useTranslation} from "react-i18next"
 import Swal from 'sweetalert2'
+import Image from "react-image-webp";
 
 const Services = () => {
   const form = useRef();
@@ -101,7 +102,7 @@ function handleClick(){
     <section className="container container__services">
       <div className="container__service-body">
             <main className="services__main-image">
-                <img src={phoneprotection} alt="phone protection and API"/>
+                <img  className="phone-icon" src={phoneprotection} alt="phone protection and API"/>
               </main>
             <div className="service__text-form">
               <div className="services__area">
@@ -128,7 +129,10 @@ function handleClick(){
                         </p>
                       </div>
                       <div  className="feature__image">
-                          <img src={developerSign}/>
+                          <Image
+                                src={require("../../assets/code_perspective.png")}
+                                webp={require("../../assets/code_perspective.webp")}
+                                />
                       </div>
                 </div>
                   <div className="features__box service__yellow">
@@ -138,7 +142,10 @@ function handleClick(){
                             </p>
                         </div>
                         <div  className="feature__image">
-                          <img src={padlock}/>
+                        <Image
+                                src={require("../../assets/padlock_perspective.png")}
+                                webp={require("../../assets/padlock_perspective.png")}
+                                />
                         </div>
                   </div>
        </main>

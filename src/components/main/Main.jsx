@@ -7,6 +7,7 @@ import Grouppic from '../../assets/profile-pic2.png'
 
 
 import Swal from 'sweetalert2'
+import Image from "react-image-webp";
 
 
 const Main = () => {
@@ -49,7 +50,7 @@ const Main = () => {
             console.log("message sent");
             e.target.reset()
             Swal.fire({
-              title: "Email sucessfully delivered. We're excited to have you on board!",
+              title: "Email sucessfully delivered. \n You would to notified first when we launch!",
               width: 600,
               padding: '3em',
               color: '#716add',
@@ -131,10 +132,22 @@ const Main = () => {
            </div>
         
          
-          <small className="wailist__tag"><img src={Grouppic} className="wailist__pic"/>{t("main:join_t")} <span className="text-color"> {numberRegistered }</span>  {t("main:join_liner")}</small>
+          <small className="wailist__tag">
+          <Image
+                  alt="merchants and buyers" 
+                  className="wailist__pic"
+                  src={require("../../assets/profile-pic2.png")} 
+                  webp={require("../../assets/profile-pic2.webp")}
+                  />{t("main:join_t")} 
+          <span className="text-color"> {numberRegistered }</span>  {t("main:join_liner")}</small>
         </div>
         <main className="main__image">
-          <img src={Shopper} alt="lady holding phone and shopping"/>
+        <Image
+              alt="lady holding phone and shopping" 
+              className='logo__img-box'
+              src={require("../../assets/blufod-main-image.png")} 
+              webp={require("../../assets/blufod-main-image.webp")}
+              />
         </main>
       </div>
   </section>

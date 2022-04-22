@@ -11,7 +11,7 @@
 
 .benefits__main-image{
     background-color: #312BE0;
-    width: 33%;
+    width: 23rem;
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
 }
@@ -62,13 +62,40 @@
   }
   
   
+/* ==============MEDIA QUERIES (MEDIUM DEVICES) =============================*/
+
+
+@media screen and (max-width:800Px){
+    .container__benefits{
+        display: flex;
+        flex-direction: column;
+    }
   
+    .benefits__main-image{
+        width: 100%;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        border-bottom-left-radius: 0rem;
+    }
+
+
+  .benefits__text{
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+  }
+    section{
+        margin-top: 6rem;
+    }
+  }
+
+
   /* ====================MEDIA QUERIES (SMALL DEVICES) ===========================*/
   
   @media screen and (max-width:600px){
     .container__benefits{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .benefits__main-image{

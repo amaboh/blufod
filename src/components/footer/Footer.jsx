@@ -7,13 +7,16 @@ import {FaTwitter} from "react-icons/fa"
 import {FaLinkedinIn} from "react-icons/fa"
 
 import{useTranslation} from "react-i18next"
+import Image from "react-image-webp"
 
 const Footer = () => {
   const {t} = useTranslation(["footer"])
   return (
     <section className="container container__footer">
     <main className="footer__text">
-          <img src={logo} alt="blufod logo"/>
+          <Image src={require('../../assets/blufod-logo.png')}
+                  webp={require('../../assets/blufod-logo.webp')}
+                  alt="blufod logo"/>
           <h3>{t("follow")} <span className="footer__blog"> <a href="https://medium.com/@blufod" target="_blank">Blog</a></span></h3>
     </main>
      <div className="footer__social-media">

@@ -1,11 +1,9 @@
 import React from 'react'
 import './features.css'
-import Shield from '../../assets/Shield_perspective_matte1.png'
-import Pie from '../../assets/Diagram_perspective_matte3.png'
-import Settings from '../../assets/Settings_perspective_matte4.png'
-import MoneyBag from '../../assets/Money_bag_perspective_matte2.png'
+
 
 import { useTranslation } from 'react-i18next'
+import Image from 'react-image-webp'
 
 const Features = () => {
   const {t} = useTranslation(["features"])
@@ -29,7 +27,10 @@ const Features = () => {
                         </p>
                     </div>
                     <div className="feature__image">
-                         <img src={Shield}/>
+                        <Image
+                              src={require("../../assets/Shield_perspective_matte1.png")}
+                              webp={require("../../assets/Shield_perspective_matte1.webp")}
+                              />
                     </div>
                 </div>
 
@@ -40,7 +41,10 @@ const Features = () => {
                         </p>
                     </div>
                     <div className="feature__image">
-                        <img src={MoneyBag}/>
+                        <Image
+                              src={require("../../assets/Money_bag_perspective_matte2.png")}
+                              webp={require("../../assets/Money_bag_perspective_matte2.webp")}
+                              />
                     </div>
                 </div>
             </div>
@@ -55,7 +59,10 @@ const Features = () => {
                         </p>
                       </div>
                       <div className="feature__image">
-                        <img src={Pie}/>
+                          <Image
+                                  src={require("../../assets/Diagram_perspective_matte3.png")}
+                                  webp={require("../../assets/Diagram_perspective_matte3.webp")}
+                                  />
                       </div>   
               </div>
 
@@ -66,7 +73,10 @@ const Features = () => {
                         </p>
                       </div>
                       <div className="feature__image">
-                        <img src={Settings}/>
+                            <Image
+                                  src={require("../../assets/Settings_perspective_matte4.png")}
+                                  webp={require("../../assets/Settings_perspective_matte4.webp")}
+                                  />
                       </div>   
               </div>
         </div>    

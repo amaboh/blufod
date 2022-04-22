@@ -145,6 +145,24 @@
   
   }
   
+  /* ================MEDIA QUERIES (MEDIUM DEVICES) =================*/
+
+
+  @media screen and (max-width:800Px){
+
+      .first__row-box{
+        
+        }
+       
+       
+
+       h1{
+        font-size: 1rem;
+       }
+ 
+    
+
+  }
   
   
   /* ====================MEDIA QUERIES (SMALL DEVICES) ===========================*/

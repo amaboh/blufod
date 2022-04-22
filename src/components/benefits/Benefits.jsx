@@ -1,13 +1,19 @@
 import React from 'react'
 import './benefits.css'
-import customerCare from "../../assets/customer-care-image.png"
 
+import { Container} from "react-bootstrap"
+import Image from "react-image-webp"
 
 const Benefits = () => {
   return (
     <section className="container container__benefits">
+      
         <main className="benefits__main-image">
-          <img src={customerCare} alt="blufod agent smiling"/>
+            <Image
+                  alt="blufod agent smiling"
+                  src={require("../../assets/customer-care-image.png")}
+                  webp={require("../../assets/customer-care-image.webp")}
+                  />
         </main>
       <div className="benefits__text">
         <div className="benefits__area">
