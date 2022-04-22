@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import './header.css'
-import logo from '../../assets/blufod-logo.png'
-import logowp from '../../assets/blufod-logo.webp'
+
 
 import {useTranslation} from "react-i18next";
 import i18next from "i18next";

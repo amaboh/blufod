@@ -8,7 +8,6 @@ import phoneprotection from "../../assets/phone-protection.svg"
 import Faquestions from '../../general/Faquestions'
 
 import {useTranslation} from "react-i18next"
-import Swal from 'sweetalert2'
 import Image from "react-image-webp";
 
 const Services = () => {
@@ -47,7 +46,7 @@ const Services = () => {
           console.log("message sent");
           e.target.reset()
           Swal.fire({
-            title: "Email sucessfully delivered. We're excited to have you on board!",
+            title: "Email sucessfully delivered. \n You would to notified first when we launch!",
             width: 600,
             padding: '3em',
             color: '#716add',

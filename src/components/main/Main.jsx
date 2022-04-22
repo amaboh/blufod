@@ -2,11 +2,7 @@ import React, {useState, useEffect, useRef} from 'react';
 import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser'
 import './main.css'
-import Shopper from '../../assets/blufod-main-image.png'
-import Grouppic from '../../assets/profile-pic2.png'
 
-
-import Swal from 'sweetalert2'
 import Image from "react-image-webp";
 
 
