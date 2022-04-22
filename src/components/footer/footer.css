@@ -1,19 +1,20 @@
 .footer__blog{
     color: #060F3D;
+    
 }
 
 
 .container__footer{
     display: flex;
     flex-direction: column;
-    
     padding: 3rem 0;
     justify-content: center;
 
 }
 .footer__text{
-    width: 40%;
+    max-width: 20rem;
     margin: 0 auto;
+    text-align: center;
 }
 
 .footer__text img{
@@ -24,7 +25,7 @@
 }
 
 .footer__social-media{
-    max-width: 30%;
+    max-width: 18rem;
     margin: 0 auto;
     padding: 1rem 0 3rem;
 }

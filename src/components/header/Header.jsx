@@ -47,8 +47,8 @@ const handleLanguageChange = (e) => {
                       value={localStorage.getItem("i18nextLng")}
                       onChange={handleLanguageChange}
                     >
-                      <option value="en">EN🇬🇧</option>
-                      <option value="fr">FR🇫🇷</option>
+                      <option value="en">English</option>
+                      <option value="fr">Français</option>
                     </select>
                 </li>
                 <Nav.Link className="navBlog" href="https://medium.com/@blufod">Blog</Nav.Link>
