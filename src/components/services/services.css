@@ -496,7 +496,10 @@
     .flip4{
        padding-left: -9rem;
     }
-
+    
+    .email-field:focus{
+      padding: 2rem;
+  }
     .wordCarousel{
         font-size: 1.5rem;
         display: flex;

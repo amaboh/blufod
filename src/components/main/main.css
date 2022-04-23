@@ -296,6 +296,10 @@
         width: 18rem;
         resize: none;
     }
+
+    .email-field:focus{
+        padding: 2rem;
+    }
     .form-container{
         background: none;
         border: none;
