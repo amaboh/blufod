@@ -292,7 +292,9 @@
   
     .email-field{
         font-size: 0.8rem;
+        height: 5.5vh;
         width: 18rem;
+        resize: none;
     }
     .form-container{
         background: none;
@@ -324,7 +326,7 @@
     }
 
     .submit-btn:active{
-        transform: var(--transform-btn-bg)
+        transform: var(--transform-btn-md)
     }
     
     

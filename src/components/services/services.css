@@ -363,7 +363,9 @@
 
       .email-field{
         font-size: 0.8rem;
+        height:  5.5vh;
         width: 18rem;
+        resize: none;
     }
 
   }
@@ -467,6 +469,10 @@
         position: relative;
         
     }
+
+    .submit-btn:active{
+      transform: var(--transform-btn-md)
+  }
 
     .email__input-service{
         width: 18rem;
